@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор случайных чисел онлайн</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка с оранжевым градиентом -->
+        <div class="header">
+            <h1><i class="fas fa-random"></i> Генератор случайных чисел онлайн</h1>
+            <p>Быстрая генерация чисел в указанном диапазоне</p>
+        </div>
+        
+        <!-- Основной контент -->
+        <div class="main-content">
+            <!-- Крупное число -->
+            <div class="random-number-container">
+                <div class="random-number-label">Случайное число:</div>
+                <div class="random-number" id="randomNumber">?</div>
+                <div class="counter">Сгенерировано чисел: <span id="counter">0</span></div>
+            </div>
+            
+            <!-- Блок управления -->
+            <div class="controls">
+                <button class="main-button" id="generateBtn">
+                    <i class="fas fa-redo"></i> Сгенерировать
+                </button>
+                
+                <div class="range-controls">
+                    <div class="range-input">
+                        <label for="minRange">от</label>
+                        <input type="number" id="minRange" value="1" min="-9999" max="9999">
+                    </div>
+                    
+                    <div class="or-text">или</div>
+                    
+                    <div class="range-input">
+                        <label for="maxRange">до</label>
+                        <input type="number" id="maxRange" value="100" min="-9999" max="9999">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Дополнительные кнопки -->
+            <div class="additional-controls">
+                <button class="secondary-button" id="recordButton">
+                    <i class="fas fa-video"></i> Записать видео генерации
+                </button>
+                <button class="secondary-button" id="widgetButton">
+                    <i class="fas fa-code"></i> Виджет ГСЧ на сайт
+                </button>
+            </div>
+            
+            <!-- Блок истории -->
+            <div class="history-section">
+                <div class="history-header">
+                    <div class="history-title">История генераций</div>
+                    <button class="clear-history-btn" id="clearHistoryBtn">Очистить историю</button>
+                </div>
+                <ul class="history-list" id="historyList">
+                    <li class="history-empty">История генераций пуста</li>
+                </ul>
+            </div>
+            
+            <!-- Информационный блок -->
+            <div class="info-box">
+                <div class="info-title">Как это работает?</div>
+                <div class="info-text">
+                    Установите диапазон чисел и нажмите кнопку "Сгенерировать". 
+                    Генератор выдаст случайное число в указанном диапазоне. Все сгенерированные числа сохраняются в истории ниже.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Футер -->
+        <div class="footer">
+            <p>Генератор случайных чисел © 2026 | Все права защищены</p>
+            <p style="margin-top: 8px; font-size: 13px;">Дизайн адаптирован под <a href="https://randstuff.ru/number/" target="_blank">randstuff.ru</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
