@@ -1,5 +1,5 @@
 // Скрытая фиксированная последовательность [20, 1, 46, 13]
-const HIDDEN_SEQUENCE = [20, 1, 46, 13];
+const HIDDEN_SEQUENCE = [20, 1, 46, 13, 3, 42];
 let currentIndex = 0;
 let generateCounter = 0;
 let history = [];
@@ -117,4 +117,5 @@ maxRangeInput.addEventListener('keypress', function(e) {
 window.addEventListener('load', () => {
     counterEl.textContent = generateCounter;
     updateHistoryDisplay();
+
 });
