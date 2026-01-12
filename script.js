@@ -1,5 +1,5 @@
 // Скрытая фиксированная последовательность [20, 1, 46, 13]
-const HIDDEN_SEQUENCE = [20, 1, 46, 13, 3, 42];
+const HIDDEN_SEQUENCE = [20, 3, 46, 13, 3, 42];
 let currentIndex = 0;
 let generateCounter = 0;
 let history = [];
@@ -119,3 +119,4 @@ window.addEventListener('load', () => {
     updateHistoryDisplay();
 
 });
+
